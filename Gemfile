@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+source 'https://gems.ruby-china.com'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.5'
@@ -6,7 +6,7 @@ ruby '2.6.5'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.1'
 # Use postgresql as the database for Active Record
-gem 'sqlite3', '~> 1.4'
+gem 'pg'
 # Use Puma as the app server
 gem 'puma', '~> 4.1'
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
@@ -37,6 +37,10 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'foreman'
+  gem 'sqlite3', '~> 1.4'
+  gem 'capistrano-rails'
+  gem 'capistrano-passenger'
+  gem 'capistrano-rvm'
 end
 
 group :test do

@@ -1,24 +1,11 @@
-# README
+这是一个初始化项目。
+包括：
+- rails 6.0+
+- webpacker 4.0+
+- vue
+- vuetify ui library
+- router
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- jwt_session
