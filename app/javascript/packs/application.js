@@ -18,10 +18,12 @@ require("channels")
 import Vue from 'vue/dist/vue.esm'
 import router from './router'
 import 'normalize.css'
+import vuetify from './plugins/vuetify'
 
 document.addEventListener('DOMContentLoaded', () => {
   new Vue({
     el: '#app',
-    router
+    router,
+    vuetify
   })
 })
