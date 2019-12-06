@@ -23,6 +23,9 @@ module InitRailsWebpackerVuetifyJwt
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 6.0
+    config.enable_dependency_loading = true
+    config.autoload_paths += %W[#{Rails.root}/lib]
+    config.eager_load_paths += %W[#{Rails.root}/lib]
 
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration can go into files in config/initializers

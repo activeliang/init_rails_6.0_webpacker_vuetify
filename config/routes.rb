@@ -11,5 +11,8 @@ Rails.application.routes.draw do
   end
 
   root :to => "application#index"
+  # mount ExceptionTrack::Engine => "/err", constraints: AdminConstraint.new
+  mount ExceptionTrack::Engine => "/err"
+
   match "*path", to: "application#index", format: false, via: :get
 end
