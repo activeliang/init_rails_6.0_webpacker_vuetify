@@ -3,9 +3,7 @@
 - rails 6.0+
 - webpacker 4.0+
 - vue
-- vuetify ui library
+- vuetify ui library (A-la-carte mode)
 - router
-
-
-
-- jwt_session
+- capistrano (deploy config)
+- jwt_session (feature)
