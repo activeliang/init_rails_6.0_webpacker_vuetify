@@ -68,7 +68,7 @@ namespace :deploy do
       run_locally do
         execute :rm, '-rf public/assets'
         execute :rm, '-rf public/packs'
-        execute :rm, 'public/index.html'
+        # execute :rm, 'public/index.html'
       end
     end
   end
