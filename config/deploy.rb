@@ -22,7 +22,7 @@ set :deploy_to, "/home/deploy/init_vuetify"
 # set :pty, true
 
 # Default value for :linked_files is []
-append :linked_files, "config/database.yml", "config/secrets.yml"
+append :linked_files, "config/database.yml", "config/secrets.yml", ".env", "application.yml"
 
 # Default value for linked_dirs is []
 append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "public/system"
@@ -70,6 +70,17 @@ namespace :deploy do
         execute :rm, '-rf public/packs'
         # execute :rm, 'public/index.html'
       end
+    end
+  end
+end
+
+# rerun yarn install local
+after "deploy:log_revision", "deploy:re_yarn_install_locall"
+namespace :deploy do
+  desc "redo yarn install locally!!!"
+  task :re_yarn_install_locall do
+    run_locally do
+      execute "yarn install"
     end
   end
 end

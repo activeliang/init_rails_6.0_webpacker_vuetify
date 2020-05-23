@@ -2,14 +2,16 @@
 <html>
   <head>
     <title>InitRailsWebpackerVuetifyJwt</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name='description' content=''/>
+    <meta name="keywords" content=''/>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
-    <%= stylesheet_pack_tag 'application' %>
-    <%= javascript_pack_tag 'application' %>
+    <%= stylesheet_packs_with_chunks_tag 'application' %>
+    <%= javascript_packs_with_chunks_tag 'application' %>
   </head>
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
-<link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
+  <link href="https://cdn.bootcss.com/MaterialDesign-Webfont/5.0.45/css/materialdesignicons.min.css" rel="stylesheet" crossorigin="anonymous">
 
   <body>
     <div id="app">
